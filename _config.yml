@@ -1,0 +1,44 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      rouge
+
+github: [metadata]
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+gems:
+  - jekyll-coffeescript
+  - jekyll-gist
+  - jekyll-mentions
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-coffeescript
+  - jekyll-gist
+  - jekyll-mentions
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+# Permalinks
+permalink:        /:title
+
+# Setup
+title:            mhl
+tagline:          ''
+description:      '<a href="http://twitter.com/LeonardMH">@twitter</a><br /><a href="http://github.com/LeonardMH">@github</a>'
+url:              http://hyde.getpoole.com
+baseurl:          /
+
+author:
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
+
+gems: ['jekyll-paginate']
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
