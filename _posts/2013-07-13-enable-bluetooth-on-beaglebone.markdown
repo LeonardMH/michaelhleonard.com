@@ -4,8 +4,8 @@ title:  "Enable Bluetooth on BeagleBone Black"
 date:   2013-07-13 17:35:00 -0600
 categories: beaglebone howto
 ---
-Have you bought a Bluetooth adapter for your BeagleBone Black but can’t
-get it to work? If so, this article is for you.
+**Have you bought a Bluetooth adapter for your BeagleBone Black but can’t
+get it to work? If so, this article is for you.**
 
 If you are having trouble getting your computer or other device to pair
 with the Bluetooth dongle you have attached to your BeagleBone Black,
