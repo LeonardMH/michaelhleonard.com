@@ -1,0 +1,188 @@
+Ramon
+May 19, 2015 at 8:56 am /
+Thanks a lot for this post.
+Although I’m a bit late, but I still hope you can help me:
+
+Everything worked but I would like to be able to automatically use the C/C++ Remote Application configuration. Instead – when I clich on the arrow or press Ctrl+F11 – Eclipse creates a new run C/C++ Application configuration.
+
+Is there a way to change this behavour? I’m using Eclipse 3.8.
+
+
+Michael Leonard
+May 19, 2015 at 5:50 pm /
+Yes it is certainly possible to change the default run configuration though I can’t recall how to do it off the top of my head and I don’t have Eclipse installed at the moment. A google search or some browsing on Stack Overflow should point you in the right direction.
+
+
+Ramon
+May 20, 2015 at 3:00 am /
+I can see that there are now 2 comments, but I can’t see any of them.
+Would you mine emailing me?
+
+
+Ramon
+May 28, 2015 at 10:05 am /
+Thanks for your email!
+
+I found this:
+http://www.eclipseonetips.com/2010/01/15/always-rundebug-the-last-launched-class-instead-of-the-selected-one-in-eclipse/#more-622
+
+
+keil
+June 4, 2015 at 3:02 am /
+at run configuration i have the error for my test cpp
+“root@beaglebone:~# chmod +x /home/root/test;Home/workspce\ for\ c++/test/src/tes t.cpp;exit
+chmod: cannot access `/home/root/test’: No such file or directory
+-bash: Home/workspce for c++/test/src/test.cpp: No such file or directory
+logout”
+help
+
+
+Michael
+June 26, 2015 at 1:23 pm /
+Thank you for this article. I am an senior student majoring in electrical engineering. I came across the beaglebone last year for a school project and I loved it. My question is what would be the right path academically to master this stuff? All i know so far is from browsing and learning on my own. I’d love a formal training. Also I was trying to achieve this on mac with xcode, with no success at all. Is there a way to achieve this? Finally, I am also on the process a creating a blog about technology, any advice would be appreciated. Thank you for your effort and take care.
+
+
+Aniket Gurkhe
+July 16, 2015 at 1:30 pm /
+Michael,
+This blog is really very helpful, Thank you very much.
+I have one query. In last couple of steps where we return to “Run Configuration” which path we exactly select? Can you please elaborate those steps? For me everything worked as expected but only last step is giving an error saying “Permission denied”. So, I am pretty sure that I am making mistake in path selection.
+Thanks in advance!
+
+
+J. Howard
+August 29, 2015 at 4:08 pm /
+Following step by step I was doing good until after “If you have multiple Toolchain options just choose one”. I did so and then was faced with a dialog box asking for the Cross compiler prefix, and Cross compiler path. So I didn’t reach the “set up some of the template options” in the next paragraph. Do you have any idea what goes in this dialog? I’m using Eclipse V. 3.8.1
+
+
+alex
+September 3, 2015 at 10:27 am /
+Hi,
+
+I have no option to run remotely my app because ‘RUN’ button is not highlighted. I have followed all your steps, and there is no way to remotely run nothing.
+
+Regards.
+
+
+alex
+September 3, 2015 at 10:32 am /
+Hi,
+
+there is no option to run remote C++ application, even when every parameter is properly configured (All steps have been repeated several times, even cleaning the eclipse workspace).
+
+http://i58.tinypic.com/334pzr6.png
+‘RUN’ button is not highlighted.
+
+Could you help me to solve this issue, please?
+
+
+NickN
+September 6, 2015 at 2:40 am /
+Hello, I really appreciate this write-up. But I have hit some snags…
+1st Debian doesn’t have the package “gcc-arm-linux-gnueabi” I had to go with “gcc-arm-none-eabi” or maybe I messed up…
+2nd During the compilation step after switching to the arm tools I get linker errors complaining about missing references to ‘_exit’ and several others. They are all called from newlibs sources… I was hoping you might be able to shed some light or at least get me barking up the right tree. Thanks again for writing this. Cheers
+
+
+Chad
+September 6, 2015 at 4:07 pm /
+Looks like SSH Terminals has been removed from eclipse as a default option. There was no ‘next’ beyond SSH shells step. I saw another article suggesting that the terminal has been separated as its own plugin or something.
+
+
+Cleber Marques
+September 16, 2015 at 9:58 pm /
+Great tutorial!!
+I followed your steps until the end…But when I ran it, I didnt get the “!!!Hello Bleaglebone!!!” message. I got as bellow:
+
+Last login: Sun Mar 1 22:37:56 2015 from cleber-hp-pavilion-14-notebook-pc.local
+echo $PWD’>’
++x /home/cleber/TCC;/home/cleber/TCC;/home/cleber/TCC;exit
+root@beaglebone:~# echo $PWD’>’
+/root>
+root@beaglebone:~# +x /home/cleber/TCC;/home/cleber/TCC;/home/cleber/TCC;exit
+-bash: +x: command not found
+-bash: /home/cleber/TCC: Is a directory
+-bash: /home/cleber/TCC: Is a directory
+logout
+
+Could you help me to get the expected results on the console?
+Tks a lot!
+
+
+Alan
+September 17, 2015 at 6:35 pm /
+at run configuration i have the error for my test cpp
+“root@beaglebone:~# chmod +x /home/root/test;Home/workspce\ for\ c++/test/src/tes t.cpp;exit
+chmod: cannot access `/home/root/test’: No such file or directory
+-bash: Home/workspce for c++/test/src/test.cpp: No such file or directory
+logout”
+help
+
+@keil run this command on your beaglebone black in the directory where test is:
+
+$ readelf -l test |grep interpreter
+[Requesting program interpreter: /lib/ld-linux.so.3] <—– note down the program interpreter request on your machine output
+$ readelf -l /bin/ls |grep interpreter
+[Requesting program interpreter: /lib/ld-linux-armhf.so.3] <—- note down the program interpreter your beaglebone is using
+
+If your beaglebone is using armhf then you need to compile on the host machine with the cross compiler arm-linux-gnueabihf-g++-4.8
+
+I installed it on Ubuntu with : sudo apt-get install g++-arm-linux-gnueabihf
+
+You can then go over the steps in the guide substituting the gnueabihf compiler for the one in the guide i.e. gnueabi
+
+
+tbinns
+September 18, 2015 at 3:54 pm /
+Hi,
+Can you use 64bit Linux for the Ubuntu load, or do you need to use the 32bit version?
+Thanks,
+tbinns
+
+
+John
+September 26, 2015 at 5:16 pm /
+Hi, so I followed this tutorial. I got it working before but recently reinstalled ubuntu and now I get this error
+
+Error during file upload.
+Missing element for : ”
+Missing element for : ”
+Missing element for : ”
+
+any idea?
+
+
+Ray
+September 30, 2015 at 10:51 am /
+‘Launching Test Debug’ has encountered a problem.
+Error during file upload.
+
+Error during file upload.
+Missing element for:”
+Missing element for:”
+Missing element for:”
+
+
+Ray
+September 30, 2015 at 10:53 am /
+I am getting the following error when i run at the end.. can anyone help please??
+
+‘Launching Test Debug’ has encountered a problem.
+Error during file upload.
+
+Error during file upload.
+Missing element for:”
+Missing element for:”
+Missing element for:”
+
+
+florian
+January 23, 2016 at 4:58 pm /
+Hi all and thanks a lot for your tutorial , it is realy clear and nicelly done.
+
+As few people, i followed the step without probelm till the most important end.
+
+I son’t have the nice “Hello world” at the end but, a No such file or directory message
+
+What’s going wrong please ?
+
+Thanks a lot for your help and your support
