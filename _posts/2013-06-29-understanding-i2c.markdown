@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Understanding and Using I2C"
+title:  "Understanding I2C"
 date:   2013-06-29 15:00:00 -0600
 categories: hardware
 ---
@@ -40,8 +40,11 @@ and another from the SDA line to the 5 V line. You only need one set
 of pull-up resistors for the whole I2C bus, not for each device, as
 illustrated below:
 
-<p style="text-align: center;"><img class="en-media  " title="Using pull-up resistors on the I2C bus." alt="Image showing how to use pull-up resistors on the I2C bus." src="http://www.michaelhleonard.com/wp-content/uploads/2013/07/1.gif" width="393" height="141" name="ff799c57-5123-4727-a795-d13d688f4f8b" /></p>
-<p style="text-align: center;">Using pull-up resistors on the I2C bus</p>
+{% 
+    include image
+    name="i2c-bus-pullups.gif"
+    caption="Using pull-up resistors on the I2C Bus"
+%}
 
 The value of the resistors is not critical. I have seen anything from
 1k8 (1800 ohms) to 47k (47000 ohms) used. 1k8, 4k7 and 10k are common
@@ -78,7 +81,10 @@ only places where the SDA (data line) is allowed to change while the SCL
 stable and not change whilst SCL is high. The start and stop sequences
 mark the beginning and end of a transaction with the slave device.
 
-<p style="text-align: center;"><img class="en-media aligncenter" alt="" src="http://www.michaelhleonard.com/wp-content/uploads/2013/07/2.gif" width="486" height="131" name="3068804c-b0ca-48f3-aa91-0ff02279225b" /></p>
+{% 
+    include image
+    name="i2c-start-stop.gif"
+%}
 
 Data is transferred in sequences of 8 bits. The bits are placed on the
 SDA line starting with the MSB (Most Significant Bit). The SCL line is
@@ -95,7 +101,10 @@ If it sends back a high then it is indicating it cannot accept any
 further data and the master should terminate the transfer by sending a
 stop sequence.
 
-<p style="text-align: center;"><img class="en-media aligncenter" alt="" src="http://www.michaelhleonard.com/wp-content/uploads/2013/07/3.gif" width="390" height="61" name="75040632-83de-49c2-a00f-721131b2ff66" /></p>
+{% 
+    include image
+    name="i2c-ack-bit.gif"
+%}
 
 ### How Fast is it?
 
@@ -126,7 +135,10 @@ If the bit is 1 the master is reading from the slave. The 7 bit address
 is placed in the upper 7 bits of the byte and the Read/Write (R/W) bit
 is in the LSB (Least Significant Bit).
 
-<p style="text-align: center;"><img class="en-media aligncenter" alt="" src="http://www.michaelhleonard.com/wp-content/uploads/2013/07/4.gif" width="364" height="57" name="525be5b1-c5eb-43cd-90a0-e134a11af924" /></p>
+{% 
+    include image
+    name="i2c-seven-bit-addressing.gif"
+%}
 
 The placement of the 7 bit address in the upper 7 bits of the byte is a
 source of confusion for the newcomer. It means that to write to address
@@ -207,7 +219,10 @@ byte from the CMPS03 module:
 
 The bit sequence will look like this:
 
-<p style="text-align: center;"><img class="en-media aligncenter" alt="" src="http://www.michaelhleonard.com/wp-content/uploads/2013/07/5.gif" width="565" height="182" name="5a0cb370-4894-4ea4-a96f-c6244bd6e3f7" /></p>
+{% 
+    include image
+    name="i2c-complex-sequence.gif"
+%}
 
 ### Wait a Moment
 
