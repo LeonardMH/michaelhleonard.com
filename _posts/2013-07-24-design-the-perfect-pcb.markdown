@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Design the Perfect PCB"
-date:   2013-07-24 15:00:00 -0600
+date:   2013-07-24 16:00:00 -0600
 categories: hardware
 ---
 
