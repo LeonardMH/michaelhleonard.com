@@ -5,9 +5,14 @@ date:   2013-07-24 15:00:00 -0600
 categories: hardware
 ---
 
-As far as I know, there are no standard guidelines for drawing schematics. Most of us learn by trial-and-error, pick up the habits of our teachers, or just never learn. I think it's time that these guidelines found a home.
+As far as I know, there are no standard guidelines for drawing schematics. Most
+of us learn by trial-and-error, pick up the habits of our teachers, or just
+never learn. I think it's time that these guidelines found a home.
 
-The purpose of an electronics schematic is simple, to describe how components are electrically connected. A schematic does not necessarily indicate the physical relationship between components, though a good schematic will make this obvious when necessary.
+The purpose of an electronics schematic is simple, to describe how components
+are electrically connected. A schematic does not necessarily indicate the
+physical relationship between components, though a good schematic will make
+this obvious when necessary.
 
 <strong>The difference between a good schematic and a bad schematic is a matter of how easy it is to understand.</strong> If another person is able to look at the schematic and simply understand it, you have made a <em>good</em> schematic, if another person has to look at your schematic and decipher it, you have made a <em>bad</em> schematic. Here are my suggestions for making a <em>good</em> schematic.
 
@@ -43,9 +48,18 @@ The final guideline for proper labeling is to <strong>remember to label your mos
 
 This means that instead of "Pin going to output" as a label you would want to do something like "TO_OUT" or even better, just "OUT." This will ensure that you have readable schematics with signal names that are obvious and intuitive.
 
-<p style="text-align: center;"><a href="http://www.michaelhleonard.com/wp-content/uploads/2013/07/1.png"><img class="aligncenter" src="http://www.michaelhleonard.com/wp-content/uploads/2013/07/1-1024x454.png" alt="Good labeling practices vs poor labeling" width="819" height="363" /></a></p>
+{%
+    include image
+    name="1.png"
+    caption="Good labeling practices vs. poor labeling"
+%}
 
+<!-- TODO: REPLACE IMAGE
+<p style="text-align: center;">
+<a href="http://www.michaelhleonard.com/wp-content/uploads/2013/07/1.png">
+<img class="aligncenter" src="http://www.michaelhleonard.com/wp-content/uploads/2013/07/1-1024x454.png" alt="Good labeling practices vs poor labeling" width="819" height="363" /></a></p>
 <p style="text-align: center;">An example of good labeling against poor use of labels.</p>
+-->
 
 <h4>The Logical Schematic</h4>
 
@@ -53,29 +67,68 @@ I'm not certain where the convention came from, but it is always customary that 
 
 Of course you can't always do it, but at the very least try to <strong>separate your power pins from your I/O pins</strong>. If you have multiple voltage rails, the more positive voltages are generally higher on the schematic, though this is not a do-or-die rule.
 
-<p style="text-align: center;"><a href="http://www.michaelhleonard.com/wp-content/uploads/2013/07/2.png"><img class="aligncenter  wp-image-928" src="http://www.michaelhleonard.com/wp-content/uploads/2013/07/2-1024x687.png" alt="A completely illogical circuit vs the standard common emitter" width="717" height="481" /></a></p>
+{%
+    include image
+    name="2.png"
+    caption="An illogical circuit vs. the standard common emitter"
+%}
 
+<!-- TODO: REPLACE IMAGE
+<p style="text-align: center;">
+<a href="http://www.michaelhleonard.com/wp-content/uploads/2013/07/2.png">
+<img class="aligncenter  wp-image-928" src="http://www.michaelhleonard.com/wp-content/uploads/2013/07/2-1024x687.png" alt="A completely illogical circuit vs the standard common emitter" width="717" height="481" /></a></p>
 <p style="text-align: center;">The standard common emitter vs. a completely illogical implementation of the same circuit. It was actually difficult to draw the circuit on the right.</p>
+-->
 
-Dot your i's and cross your t's. Well, something like that, this is a convention that comes from the days when low resolution photocopying was common. It is universally accepted that you should <strong>make a very clear dot where two wires form an intersection</strong>, your CAD package will usually handle this for you but it is good to keep in mind.
+Dot your i's and cross your t's. Well, something like that, this is a
+convention that comes from the days when low resolution photocopying was
+common. It is universally accepted that you should <strong>make a very clear
+dot where two wires form an intersection</strong>, your CAD package will
+usually handle this for you but it is good to keep in mind.
 
 Related to crossing connections, you should also try to <strong>avoid 4-way connection points</strong>. This is another recommendation from the days of photocopying circuits, but it never hurts to design for longevity.
 
-<p style="text-align: center;"><a href="http://www.michaelhleonard.com/wp-content/uploads/2013/07/3.png"><img class="aligncenter  wp-image-927" src="http://www.michaelhleonard.com/wp-content/uploads/2013/07/3-1024x394.png" alt="Crossing connections" width="717" height="276" /></a></p>
+{%
+    include image
+    name="3.png"
+    caption="The proper way to connect three wires"
+%}
 
+<!-- TODO: REPLACE IMAGE
+<p style="text-align: center;">
+<a href="http://www.michaelhleonard.com/wp-content/uploads/2013/07/3.png">
+<img class="aligncenter  wp-image-927" src="http://www.michaelhleonard.com/wp-content/uploads/2013/07/3-1024x394.png" alt="Crossing connections" width="717" height="276" /></a></p>
 <p style="text-align: center;">The proper way to connect three wires.</p>
+-->
 
 <h4>Using Hierarchy the Right Way</h4>
 
-The final pointer in ensuring that your schematic makes sense is to utilize hierarchy effectively. This means that you <strong>separate logically different parts into a new sheet</strong>. By all means, if you can fit your entire design into a single sheet without cramping it together and still following the other rules, you should do that. Otherwise you might as well separate functionally different parts of the design into separate sheets.
+The final pointer in ensuring that your schematic makes sense is to utilize
+hierarchy effectively. This means that you <strong>separate logically different
+parts into a new sheet</strong>. By all means, if you can fit your entire
+design into a single sheet without cramping it together and still following the
+other rules, you should do that. Otherwise you might as well separate
+functionally different parts of the design into separate sheets.
 
-There are different ways to do this in each CAD package, but the basic idea is the same. <strong>By keeping related components near each other and avoiding the clutter of other components you will be able to more easily verify and debug your design</strong>.
+There are different ways to do this in each CAD package, but the basic idea is
+the same. <strong>By keeping related components near each other and avoiding
+the clutter of other components you will be able to more easily verify and
+debug your design</strong>.
 
 If your schematic doesn't necessarily require multiple sheets then you should still do your best to attempt to introduce a bit of order into the chaos that is an electrical schematic. My preferred method is to draw a box around a functional unit and then place a label inside the box to indicate what that design does.
 
-<p style="text-align: center;"><a href="http://www.michaelhleonard.com/wp-content/uploads/2013/07/4.png" target="_blank"><img class="aligncenter  wp-image-924" src="http://www.michaelhleonard.com/wp-content/uploads/2013/07/4-1024x555.png" alt="Demonstration of Functionally Separate Blocks" width="819" height="444" /></a></p>
+{%
+    include image
+    name="4.png"
+    caption="Demonstration of Functionally Separate Blocks"
+%}
 
+<!-- TODO: REPLACE IMAGE
+<p style="text-align: center;">
+<a href="http://www.michaelhleonard.com/wp-content/uploads/2013/07/4.png" target="_blank">
+<img class="aligncenter  wp-image-924" src="http://www.michaelhleonard.com/wp-content/uploads/2013/07/4-1024x555.png" alt="Demonstration of Functionally Separate Blocks" width="819" height="444" /></a></p>
 <p style="text-align: center;">While this schematic may not follow all of the rules in this guide, it does a good job of demonstrating functional separation. (Click to see full image)</p>
+-->
 
 <h4>Other Tips</h4>
 

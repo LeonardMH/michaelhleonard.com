@@ -224,6 +224,7 @@ After all of the functionally important components have been labeled,
 you may have a bit of room left over for more labeling. Don't
 overcrowd the board, but you may want to include your name or
 some sort of branding. Perhaps a logo? You can do this easily in
-[EAGLE](http://www.instructables.com/id/Adding-Custom-Graphics-to-EAGLE-
-PCB-Layouts/) or KiCad using the built in tool or this [online tool from
-Wayne & Layne](http://img2mod.wayneandlayne.com/).
+[EAGLE][eagle-graphics] or KiCad using the built in tool or this
+[online tool from Wayne & Layne](http://img2mod.wayneandlayne.com/).
+
+[eagle-graphics]: http://www.instructables.com/id/Adding-Custom-Graphics-to-EAGLE-PCB-Layouts/

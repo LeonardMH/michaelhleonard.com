@@ -46,7 +46,7 @@ Just keeping this in HTML for now because that's easier to migrate.
 
 <a href="http://arduino.cc/">Arduino</a> is the true trailblazer in the <strong>microcontroller</strong> area and the device that started the whole "maker" revolution; the <a title="Raspberry Pi Homepage" href="http://www.raspberrypi.org/">Raspberry Pi</a> on the other hand is an amazing device that really started the <strong>microprocessor </strong>revolution.
 
-{% 
+{%
 	include image
 	name="raspberry-pi-front.png"
 	caption="Top view of the Raspberry Pi"
@@ -68,7 +68,7 @@ After the BeagleBoard-xM, the BeagleBoard team created the original BeagleBone. 
 
 In late 2012 the BeagleBoard team finally released the newest version of the BeagleBone, called the BeagleBone Black. I think one look at the picture will tell you why they chose this name.
 
-{% 
+{%
 	include image
 	name="beaglebone-black-front.jpg"
 	caption="Top view of the BeagleBone Black"
@@ -155,7 +155,7 @@ To start this comparison I have made a summary table where we can take a look at
 
 These are hobbyist boards and aren't exactly expected to adhere to the same high standards as a fully commercialized product. With that in mind, I still believe that the packaging and first opening of the boards constitutes an important part of the first impression a buyer will get.
 
-{% 
+{%
 	include image
 	name="unboxing.jpg"
 	caption="Unboxing the BeagleBone Black (Left) and Raspberry Pi (Right), not really though; I had already unboxed both and used them quite a bit..."
@@ -163,7 +163,10 @@ These are hobbyist boards and aren't exactly expected to adhere to the same high
 
 When I bought my Raspberry Pi, it was packaged in a plain white cardboard box with no markings or included accessories. I noticed that they have since begun shipping in nicely packaged boxes with professional looking markings, so I won't hold my experience against the Raspberry Pi.
 
-The BeagleBone Black was given to me for free as a participant in the <a href="http://ti.com/design2013">2013 TI Intern Design Competition</a>. It was packaged in an equally professional box and included a mini-USB cable and a tiny introduction card.
+The BeagleBone Black was given to me for free as a participant in the <a
+href="http://processors.wiki.ti.com/index.php/2013_Intern_Design_Challenge?DCMP=mcu&HQS=design2013">2013
+TI Intern Design Competition</a>. It was packaged in an equally professional
+box and included a mini-USB cable and a tiny introduction card.
 
 <strong>Winner: </strong>Tie
 
@@ -260,9 +263,16 @@ It is quite frankly pretty difficult to find any reliable data on this category.
 
 ### Expandability
 
-I have to admit, when I first set out writing this article I expected the BeagleBone Black to handedly dominate this category. Since I have been working on an add-on cape of my own for the BeagleBone Black (<a title="SensorCape for BeagleBone Black – Project Page" href="http://www.michaelhleonard.com/projects/sensorcape/">the SensorCape</a>), I was already fully aware of the robust <a href="http://beagleboard.org/cape">add-on ecosystem</a> that existed for the BeagleBone.
+I have to admit, when I first set out writing this article I expected the
+BeagleBone Black to handedly dominate this category. Since I have been working
+on an add-on cape of my own for the BeagleBone Black, I was already fully aware
+of the robust <a href="http://beagleboard.org/cape">add-on ecosystem</a> that
+existed for the BeagleBone.
 
-What I was not aware of though, was the add-ons for the Raspberry Pi. Just to clarify, "add-ons" do not refer to cases, cables, or other non-functional accessories; what I am interested in are the additional boards that make your BeagleBone or Raspberry Pi more capable.
+What I was not aware of though, was the add-ons for the Raspberry Pi. Just to
+clarify, "add-ons" do not refer to cases, cables, or other non-functional
+accessories; what I am interested in are the additional boards that make your
+BeagleBone or Raspberry Pi more capable.
 
 We'll take a look at the BeagleBone first. Browsing through the <a href="http://circuitco.com/support/index.php?title=BeagleBone_Capes">official CircuitCo capes page</a>, the following add-on boards really stand out to me.
 
@@ -282,7 +292,7 @@ There are many other more specialized capes in production that I chose not to in
 
 With such capable extensions for the BeagleBone, you may be wondering how the Raspberry Pi could even compete. I know I was. Truth be told, the Raspberry Pi add-ons are pretty scarce, and since there is no central repository for them, it is difficult to find a good list. The majority of add-ons I have been able to find are simply "breakout" boards or prototyping boards which allow you to easily interface with a breadboard or to solder directly on the board. These types of boards, while useful, are not a killer feature and are not unique to the Raspberry Pi.
 
-{% 
+{%
 	include image
 	name="adafruit-prototyping-plate.jpg"
 	caption="Adafruit Prototyping Pi Plate"

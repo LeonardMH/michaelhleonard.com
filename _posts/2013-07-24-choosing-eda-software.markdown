@@ -79,7 +79,7 @@ For various reasons, I ultimately decided on KiCad, but since this isn't a compa
 [2]: http://www.kicad-pcb.org/
 [3]: http://www.gpleda.org/
 [4]: http://www.expresspcb.com/index.htm
-[5]: http://www.designspark.com/eng/page/designspark-pcb-home-page
+[5]: https://www.rs-online.com/designspark/pcb-software
 [6]: http://www.diptrace.com/
 [7]: http://www.sunstone.com/pcb123.aspx
 [8]: http://www.numberone.com/easypc.asp
