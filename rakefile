@@ -1,5 +1,5 @@
 require 'html-proofer'
-task :default => :serve
+task :default => :test
 
 task :serve do
     system("bundle exec jekyll serve")
@@ -27,6 +27,10 @@ task :clobber do
 end
 
 task :test => :build do
-  options = { :assume_extension => true }
+  options = {
+      :assume_extension => true,
+      :empty_alt_ignore => true
+  }
+
   HTMLProofer.check_directory("./_site", options).run
 end
