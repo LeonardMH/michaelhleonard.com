@@ -31,7 +31,6 @@ title:            mhl
 tagline:          ''
 description:      '<a href="http://twitter.com/LeonardMH">@twitter</a><br /><a href="http://github.com/LeonardMH">@github</a>'
 url:              http://michaelhleonard.com
-baseurl:          /
 
 author:
   name:           'Mark Otto'
