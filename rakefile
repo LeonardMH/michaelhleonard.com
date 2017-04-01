@@ -21,6 +21,6 @@ task :deploy => :build do
     system(command.join(" "))
 end
 
-task :clean do
+task :clobber do
     rm_rf "_site"
 end
