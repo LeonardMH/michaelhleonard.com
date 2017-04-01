@@ -4,3 +4,23 @@ task :serve do
     system("bundle exec jekyll serve")
 end
 
+task :build do
+    system("bundle exec jekyll build")
+end
+
+task :deploy => :build do
+    command = [
+        "rsync",
+        "-rvz -e",
+        "'ssh -p 2222'",
+        "--delete",
+        "_site/",
+        "micha310@michaelhleonard.com:/home/micha310/public_html/"
+    ]
+
+    system(command.join(" "))
+end
+
+task :clean do
+    rm_rf "_site"
+end
