@@ -1,0 +1,6 @@
+language: ruby
+rvm:
+ - 2.3.3
+cache: bundler
+global_env: "NOKOGIRI_USE_SYSTEM_LIBRARIES=true"
+sudo: false

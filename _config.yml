@@ -2,13 +2,16 @@
 markdown:         kramdown
 highlighter:      rouge
 
-github: [metadata]
+github:
+  - metadata
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE.md
   - rakefile
+  - vendor
+
 kramdown:
   input: GFM
   hard_wrap: false
