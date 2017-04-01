@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby RUBY_VERSION
+ruby "2.3.3"
 
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
@@ -15,7 +15,6 @@ gem "jekyll", "3.3.1"
 gem "minima", "~> 2.0"
 
 gem "jekyll-paginate"
-gem "redcarpet"
 gem "pygments.rb"
 gem "html-proofer"
 
