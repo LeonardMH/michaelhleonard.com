@@ -4,6 +4,11 @@ highlighter:      rouge
 
 github: [metadata]
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - rakefile
 kramdown:
   input: GFM
   hard_wrap: false
