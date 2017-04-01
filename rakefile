@@ -1,3 +1,4 @@
+require 'html-proofer'
 task :default => :serve
 
 task :serve do
@@ -23,4 +24,9 @@ end
 
 task :clobber do
     rm_rf "_site"
+end
+
+task :test => :build do
+  options = { :assume_extension => true }
+  HTMLProofer.check_directory("./_site", options).run
 end
