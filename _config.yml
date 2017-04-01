@@ -9,6 +9,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE.md
+  - README.md
   - rakefile
   - vendor
 
