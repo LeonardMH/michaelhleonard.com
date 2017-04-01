@@ -27,7 +27,7 @@ of materials to consider such as ceramic or PTFE bases with
 various fillers. Since this article is more focused on general
 PCB design I will not go into details about designing for RF.
 Fortunately the EDN Network has posted a useful article on
-[choosing PCB materials for high-frequency circuits](1)
+[choosing PCB materials for high-frequency circuits][1]
 
 Really these two materials are about all that goes into a bare PCB. When
 you send your design for manufacture (or do it yourself) the electrical

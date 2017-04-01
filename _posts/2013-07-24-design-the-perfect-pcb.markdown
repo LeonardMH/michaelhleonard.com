@@ -350,7 +350,7 @@ other effects.
 - **Designing for RF** - If your design will be operating in the radio
 frequency range or using similar high frequency components, there are
 many special design factors to consider. This topic is too in depth to
-cover right here, right now, but this [post from EEWeb](1) outlines some
+cover right here, right now, but this [post from EEWeb][1] outlines some
 good notes to get you started.
 
 - **Mixed-signal designs** - If your PCB carries both analog and digital
@@ -451,8 +451,8 @@ Each software has a different process to follow in order to get Gerber
 files out, here are some tutorials that show you how to export Gerber
 files from EAGLE or KiCad.
 
-- [Prepare EAGLE files for manufacture](2) from Hack-a-Day
-- [KiCad Tutorial: Gerber file generation](3) from Wayne & Layne
+- [Prepare EAGLE files for manufacture][2] from Hack-a-Day
+- [KiCad Tutorial: Gerber file generation][3] from Wayne & Layne
 
 ### Final Manufacturing Checklist
 
@@ -492,4 +492,3 @@ bad then feel free to let me know.
 [1]: http://www.eeweb.com/blog/circuit_projects/basic-concepts-of-designing-an-rf-pcb-board
 [2]: http://hackaday.com/2009/01/15/how-to-prepare-your-eagle-designs-for-manufacture/
 [3]: http://www.wayneandlayne.com/blog/2013/02/27/kicad-tutorial-gerber-file-generation/
-
