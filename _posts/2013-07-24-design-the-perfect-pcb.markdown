@@ -185,7 +185,7 @@ address information or possible pin configurations, these are good
 details to include in your notebook.
 
 <p>
-For sketching my designs, both electrical and mechanical, I like to use this <a href="http://www.amazon.com/gp/product/0596519419/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0596519419&amp;linkCode=as2&amp;tag=michaelhleona-20" target="_blank">excellent Maker's Notebook from MAKE.</a><img style="border: none !important; margin: 0px !important;" alt="" src="http://ir-na.amazon-adsystem.com/e/ir?t=michaelhleona-20&amp;l=as2&amp;o=1&amp;a=0596519419" width="1" height="1" border="0" />
+For sketching my designs, both electrical and mechanical, I like to use this <a href="http://www.amazon.com/gp/product/0596519419/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0596519419&amp;linkCode=as2&amp;tag=michaelhleona-20" target="_blank">excellent Maker's Notebook from MAKE.</a><img style="border: none !important; margin: 0px !important;" alt="Amazon Link" src="http://ir-na.amazon-adsystem.com/e/ir?t=michaelhleona-20&amp;l=as2&amp;o=1&amp;a=0596519419" width="1" height="1" border="0" />
 </p>
 
 {% 
