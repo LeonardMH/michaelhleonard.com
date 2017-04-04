@@ -1,3 +1,4 @@
+require 'rake'
 require 'html-proofer'
 task :default => :test
 
