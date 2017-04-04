@@ -20,6 +20,7 @@ kramdown:
 
 gems:
   - jekyll-paginate
+  - jekyll-minify-html
   - jekyll-redirect-from
   - jekyll-sitemap
 

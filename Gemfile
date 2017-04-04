@@ -12,5 +12,6 @@ group :jekyll_plugins do
     gem "jekyll-redirect-from"
     gem "jekyll-feed", "~> 0.6"
     gem "jekyll-sitemap"
+    gem "jekyll-minify-html"
     gem "jekyll-paginate"
 end
