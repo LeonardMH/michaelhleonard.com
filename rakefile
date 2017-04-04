@@ -10,6 +10,9 @@ task :build do
 end
 
 task :deploy => :build do
+    # when deploying to server, compress the build files with gulp
+    system("gulp")
+
     command = [
         "rsync",
         "-rvz -e",

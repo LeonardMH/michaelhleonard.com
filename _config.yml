@@ -12,6 +12,8 @@ exclude:
   - README.md
   - rakefile
   - vendor
+  - Gulpfile.js
+  - node_modules
 
 kramdown:
   input: GFM

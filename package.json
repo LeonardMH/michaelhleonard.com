@@ -1,0 +1,24 @@
+{
+  "name": "michaelhleonard.com",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "rake test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonardMH/michaelhleonard.com.git"
+  },
+  "author": "Michael Leonard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeonardMH/michaelhleonard.com/issues"
+  },
+  "homepage": "https://github.com/LeonardMH/michaelhleonard.com#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.2.0",
+    "imagemin-pngquant": "^5.0.0"
+  }
+}
