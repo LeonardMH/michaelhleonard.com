@@ -1,5 +1,8 @@
 require 'rake'
 require 'html-proofer'
+require 'stringex'
+require 'dedent'
+
 task :default => :test
 
 desc "Serve a local instance of the site (localhost:4000)"
@@ -41,4 +44,38 @@ task :test => :build do
   }
 
   HTMLProofer.check_directory("./_site", options).run
+end
+
+namespace :posts do
+    desc "Create a new post, pass in title and slug"
+    task :new, [:title, :category] do |t, args|
+        title = args[:title]
+        category = args[:category]
+        slug = title.to_url
+
+        front_matter = <<-EOS.dedent
+            ---
+            layout: post
+            title:  #{title}
+            date:   #{Time.now}
+            categories: #{category}
+            ---
+        EOS
+
+        # posts are in _posts folder with the format
+        # {yyyy-mm-dd}-{slug}.markdown
+        date = Time.now.strftime("%Y-%m-%d")
+        file_name = "#{date}-#{slug}.markdown"
+        file_path = "_posts/#{file_name}"
+        open(file_path, 'w') { |f|
+            f.puts front_matter
+        }
+
+        # also create the assets/posts/{slug} directory to hold assets for
+        # this post
+        Dir.mkdir 'assets/posts/#{slug}'
+
+        # now open the post up for editing
+        system("vim #{file_path}")
+    end
 end
