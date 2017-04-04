@@ -1,14 +1,17 @@
 require 'html-proofer'
 task :default => :test
 
+desc "Serve a local instance of the site (localhost:4000)"
 task :serve do
     system("bundle exec jekyll serve")
 end
 
+desc "Build the _site files to prepare for deployment"
 task :build do
     system("bundle exec jekyll build")
 end
 
+desc "Do it live!"
 task :deploy => :build do
     # when deploying to server, compress the build files with gulp
     system("gulp")
@@ -25,10 +28,12 @@ task :deploy => :build do
     system(command.join(" "))
 end
 
+desc "Clear out the build files"
 task :clobber do
     rm_rf "_site"
 end
 
+desc "Make sure everything is working"
 task :test => :build do
   options = {
       :assume_extension => true
