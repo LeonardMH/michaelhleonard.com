@@ -82,7 +82,7 @@ For various reasons, I ultimately decided on KiCad, but since this isn't a compa
 [5]: https://www.rs-online.com/designspark/pcb-software
 [6]: http://www.diptrace.com/
 [7]: http://www.sunstone.com/pcb123.aspx
-[8]: http://www.numberone.com/easypc.asp
+[8]: http://www.numberone.com
 [9]: http://www.mentor.com/pcb/pads/overview/
 [10]: http://www.altium.com/en/products/altium-designer/purchasing-options
 [11]: http://www.cadence.com/products/orcad/orcad_pcb_designer/pages/default.aspx
